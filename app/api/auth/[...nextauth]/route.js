@@ -7,7 +7,8 @@ const authOptions = {
             clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
             clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
         }),
-    ]
+    ],
+    secret: process.env.NEXT_PUBLIC_NEXTAUTH_SECRET
 }
 
 const handler = NextAuth(authOptions);
